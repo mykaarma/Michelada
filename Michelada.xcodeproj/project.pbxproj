@@ -16,6 +16,8 @@
 		40001BB123E8F2810064C445 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40001BB023E8F2810064C445 /* Assets.xcassets */; };
 		40001BB423E8F2810064C445 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40001BB323E8F2810064C445 /* Preview Assets.xcassets */; };
 		40001BB723E8F2810064C445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40001BB523E8F2810064C445 /* LaunchScreen.storyboard */; };
+		40001BBD23E9031B0064C445 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40001BBC23E9031B0064C445 /* Style.swift */; };
+		40001BBF23E90D1C0064C445 /* Style+myKaarma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40001BBE23E90D1C0064C445 /* Style+myKaarma.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		40001BB323E8F2810064C445 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40001BB623E8F2810064C445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40001BB823E8F2810064C445 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40001BBC23E9031B0064C445 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		40001BBE23E90D1C0064C445 /* Style+myKaarma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Style+myKaarma.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				40001B8D23E8EEDE0064C445 /* Michelada.h */,
 				40001B8E23E8EEDE0064C445 /* Info.plist */,
+				40001BBC23E9031B0064C445 /* Style.swift */,
+				40001BBE23E90D1C0064C445 /* Style+myKaarma.swift */,
 			);
 			path = Michelada;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 				TargetAttributes = {
 					40001B8923E8EEDE0064C445 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					40001B9223E8EEDF0064C445 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -271,6 +278,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40001BBF23E90D1C0064C445 /* Style+myKaarma.swift in Sources */,
+				40001BBD23E9031B0064C445 /* Style.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +446,7 @@
 		40001B9F23E8EEDF0064C445 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FRGCAGTTW9;
@@ -453,6 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mykaarma.standard.Michelada;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +472,7 @@
 		40001BA023E8EEDF0064C445 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FRGCAGTTW9;
@@ -485,6 +497,7 @@
 		40001BA223E8EEDF0064C445 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FRGCAGTTW9;
 				INFOPLIST_FILE = MicheladaTests/Info.plist;
@@ -503,6 +516,7 @@
 		40001BA323E8EEDF0064C445 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FRGCAGTTW9;
 				INFOPLIST_FILE = MicheladaTests/Info.plist;
